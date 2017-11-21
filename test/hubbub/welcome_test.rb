@@ -21,4 +21,10 @@ class WelcomePageTest < Minitest::Test
     subject.why_hubbub!
     assert page.has_content?('ignite vibrancy into your employee wellness program')
   end
+
+  def test_load_our_solution_link
+    subject.our_solution!
+    assert page.has_content?('building behavior change one small habit at a time.')
+  end
 end
+
