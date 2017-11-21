@@ -1,5 +1,5 @@
 class WelcomePage < Capybara::PageMapper::Base
-  define_button :why_hubbub, '//a[@title="Why hubbub"]'
+  define_button :why_hubbub, '//li[1]/a[text()="Why hubbub"]'
   define_button :our_solution, './/li[2]/a[text()="Our Solution"]'
 
   def why_hubbub!
