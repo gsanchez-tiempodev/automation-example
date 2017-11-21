@@ -7,7 +7,7 @@ class WelcomePage < Capybara::PageMapper::Base
   end
 
   def our_solution!
-    why_hubbub_button.trigger('click')
+    our_solution_button.trigger('click')
   end
 
 end
